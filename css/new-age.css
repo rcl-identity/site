@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: blueviolet;
+  color: burlywood;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: orange;
 }
 
 hr {
