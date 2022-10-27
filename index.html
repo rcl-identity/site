@@ -34,21 +34,21 @@
       src="https://www.facebook.com/tr?id=1470572566296357&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
-<!-- Event snippet for Sign-up conversion page
+  <!-- Event snippet for Sign-up conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
         'send_to': 'AW-1037407170/1dw3CKjF1qwBEMKn1u4D',
         'event_callback': callback
-    });
-    return false;
-  }
+      });
+      return false;
+    }
   </script>
 
   <meta charset="utf-8">
@@ -133,7 +133,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               RCL Digital Identity
             </h1>
             <h3>
-              A cloud platform that integrates with <a href="https://azure.microsoft.com/en-us/services/active-directory/external-identities/b2c/" target="_blank">Azure AD B2C</a> to verify the physical identity of people by a process of Identity Proofing
+              A cloud platform that integrates with <a
+                href="https://azure.microsoft.com/en-us/services/active-directory/external-identities/b2c/"
+                target="_blank">Azure AD B2C</a> to verify the physical identity of people by a process of Identity
+              Proofing
             </h3>
             <a href="#try" class="btn btn-outline btn-xl js-scroll-trigger">Get Started Now!</a>
           </div>
@@ -156,14 +159,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <h3>Free Live Events</h3>
             <h4>Attend our virtual workshops in Microsoft Teams</h4>
             <p>
-              <a onclick="return gtag_report_conversion('https://identity.rclapp.com/');" href="https://www.meetup.com/cloud-computing-and-net-meetup-group/events/289151704/" target="_blank"
+              <a onclick="return gtag_report_conversion('https://identity.rclapp.com/');"
+                href="https://www.meetup.com/cloud-computing-and-net-meetup-group/events/289151704/" target="_blank"
                 class="btn btn-lg btn-danger mt-3">Register <i class="bi bi-arrow-right-circle"></i></a>
             </p>
             <p class="p-1">
-              RCL Digital Identity is a cloud based application for private organizations and governments to verify and manage the identity of persons or
+              RCL Digital Identity is a cloud based application for private organizations and governments to verify and
+              manage the identity of persons or
               customers. In this hands-on workshop, see live demos of the RCL Digital Identity platform in action.
               Learn about : Identity Providers, Verified and Self-Asserted Identity, Identity Enrollment, Identity
-              Proofing, NIST SP 800-63 Digital Identity Guidelines, Single-Sign-On, OAuth, OpenID, SAML, Multi-Factor Authentication,
+              Proofing, NIST SP 800-63 Digital Identity Guidelines, Single-Sign-On, OAuth, OpenID, SAML, Multi-Factor
+              Authentication,
               Know Your Customer (KYC) and Security Access Groups.
             </p>
             <div>Saturday 12th November 2022</div>
@@ -200,10 +206,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="text-center mb-5 shadow rounded">
             <img src="./img/rcl-portal.jpg" class="img-fluid">
           </div>
-          <p class="mb-5">The process of identity proofing may include the comparison of a person's face and personal data to a form of photo ID such as a Driver's Permit, Passport or National ID to verify a person's physical identity.
+          <p class="mb-5">The process of identity proofing may include the comparison of a person's face and personal
+            data to a form of photo ID such as a Driver's Permit, Passport or National ID to verify a person's physical
+            identity.
             The application follows the Guidelines for Digital Identity published in the <a
               href="https://pages.nist.gov/800-63-3/" target="_blank">NIST SP 800-63</a> document.
-            This application is applicable to governments and organizations such as banks, retailers, health, financial, training institutions and any organization implementing Digital Identity or Know Your Customer
+            This application is applicable to governments and organizations such as banks, retailers, health, financial,
+            training institutions and any organization implementing Digital Identity or Know Your Customer
             (KYC) systems.
           </p>
         </div>
@@ -218,7 +227,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <h3>Identity Enrollment</h3>
                   <p class="text-muted">Use the customizable open-source <a
                       href="https://github.com/rcl-identity/RCL.Core.Identity.Enrollment" target="_blank">Identity
-                      Enrollment Application</a> to allow people to register for a Digital ID issued by an organization or government.
+                      Enrollment Application</a> to allow people to register for a Digital ID issued by an organization
+                    or government.
                   </p>
                 </div>
               </div>
@@ -228,7 +238,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <h3>Identity Proofing</h3>
                   <p class="text-muted">Use the customizable open-source <a
                       href="https://github.com/rcl-identity/RCL.Core.Identity.Proofing.Portal" target="_blank">Identity
-                      Proofing Application</a> to approve a Digital ID once the physical identity of the person is verified.</p>
+                      Proofing Application</a> to approve a Digital ID once the physical identity of the person is
+                    verified.</p>
                 </div>
               </div>
             </div>
@@ -237,7 +248,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="feature-item">
                   <i class="fas fa-key text-primary"></i>
                   <h3>Single Sign-On</h3>
-                  <p>Allow people to sign-in with the same user credentials to multiple websites controlled by the organization/government or its external
+                  <p>Allow people to sign-in with the same user credentials to multiple websites controlled by the
+                    organization/government or its external
                     partners.</p>
                 </div>
               </div>
@@ -245,7 +257,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="feature-item">
                   <i class="fas fa-certificate text-primary"></i>
                   <h3>Compliance</h3>
-                  <p>The application is compliant with OAuth, OpenID Connect, SAML, NIST SP 800-63 and can be fully integrated
+                  <p>The application is compliant with OAuth, OpenID Connect, SAML, NIST SP 800-63 and can be fully
+                    integrated
                     with Azure AD B2C.</p>
                 </div>
               </div>
@@ -261,15 +274,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h2 class="section-heading">
-            <a class="btn btn-primary"
+            <a class="btn btn-primary" onclick="return gtag_report_conversion('https://identity.rclapp.com/');"
               href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.009?tab=Overview"
               target="_blank">FREE TRIAL in the Azure Marketplace</a>
           </h2>
           <p class="text-light">Try it for free for 30 days! Pay $USD 9.99 / month afterwards.
           </p>
           <div class="badges">
-            <a class="badge-link" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002"
-              target="_blank">
+            <a class="badge-link" onclick="return gtag_report_conversion('https://identity.rclapp.com/');"
+              href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002" target="_blank">
               <img src="img/azure_marketplace.png" alt="Subscribe in Azure Marketplace">
             </a>
           </div>
@@ -305,7 +318,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </a>
         </li>
         <li class="list-inline-item social-facebook">
-          <a href="https://identity.docs.rclapp.com/" target="_blank">
+          <a href="https://identity.docs.rclapp.com/" onclick="return gtag_report_conversion('https://identity.rclapp.com/');" target="_blank">
             <i class="fas fa-book"></i>
             <p>Docs</p>
           </a>
